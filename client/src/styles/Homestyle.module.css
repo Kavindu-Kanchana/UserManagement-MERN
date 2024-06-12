@@ -1,0 +1,28 @@
+.glass {
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px #4747470b;
+    backdrop-filter: blur(7.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    @apply border-4 border-gray-50 w-full max-w-screen-xl mx-auto rounded-3xl py-8 px-4 md:px-7;
+}
+
+.hoverEffect:hover {
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.zoomEffect {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+  
+.zoomEffect:hover {
+    transform: scale(1.05);
+    color: #0acb5a;
+}
+
+.homeGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
